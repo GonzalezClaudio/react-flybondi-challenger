@@ -1,0 +1,140 @@
+/* Estilos generales */
+.body {
+    background-color: rgb(10, 10, 83);
+    margin: 0; 
+}
+
+
+
+
+/* Estilos del contenedor principal */
+.Vuelo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-size: cover;
+    margin-top: 200px; 
+}
+
+
+/* Estilos del texto */
+h3 {
+    font-family: 'Bebas Neue';
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(63, 5, 5);
+    padding: 10%;
+    font-weight: 800;
+}
+
+/* Estilos del botón */
+.round-button {
+    border-radius: 20%;
+    background-color: rgb(249, 249, 125); 
+    padding: 10px 20px; 
+    color: black; 
+    cursor: pointer;
+    
+  }
+  
+
+/* Estilos del encabezado */
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 8, 8);
+    font-size: 24px;
+}
+
+
+/* Estilos de las opciones */
+.opciones {
+    background-color: rgb(249, 249, 125);
+    padding: 10px; 
+    border-radius: 5px;
+    
+    margin-top: 20px; 
+    font-size: 20px; 
+    
+}
+
+
+
+
+/* Estilos específicos para el span dentro de Vuelo-container */
+.Vuelo-container span {
+    color: #FFBF00;
+}
+
+.subtitulo {
+    /* Estilos de la descripción */
+
+    margin-top: 5px; 
+    text-align: center; 
+    color: #333; 
+    font-size: 20px; 
+}
+
+/* Estilos para el select */
+.label-select {
+    font-weight: bold;
+  }
+  
+.select-color {
+    color: #676767; 
+  }
+  
+
+.info-container {
+    border: 2px solid #ccc; 
+    padding: 10px; 
+    margin: 2px; 
+    border-radius: 8px; 
+    background-color: #edf57d; 
+  }
+  
+
+/* Estilos de la imagen que se desplaza hacia el costado */
+.scrolling-image-container {
+    overflow: 100;
+    height: 200px;
+    position: absolute;
+    top: 0; 
+    width: 80%;
+}
+
+/* Estilos de las imágenes que se desplazan hacia el costado */
+.scrolling-image {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: scrollSideways 30s linear infinite;
+}
+
+/* Establece distintas posiciones iniciales para cada imagen */
+.scrolling-image:nth-child(1) {
+    left: 0%;
+}
+
+.scrolling-image:nth-child(2) {
+    left: 50%;
+}
+
+.scrolling-image:nth-child(3) {
+    left: 100%;
+}
+
+/* Ajusta la animación scrollSideways para cada imagen individualmente */
+@keyframes scrollSideways {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
